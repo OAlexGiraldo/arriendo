@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="203dp"
+        android:layout_height="171dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="291dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="PARQUEADERO" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbparqueadero"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Parqueadero" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arriendos"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="527dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            >
+
+            <RadioButton
+                android:id="@+id/rbcasa"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:checked="true"
+                android:textSize="25dp"
+                android:text="  Casa"
+                />
+
+            <RadioButton
+                android:id="@+id/rbapartamento"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="25dp"
+                android:text="  Apartamento"/>
+
+
+            <RadioButton
+                android:id="@+id/rbfinca"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="25dp"
+                android:text="  Finca" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="205dp"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="203dp"
+        android:layout_height="171dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="291dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="N° Habitaciones" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbmenostres"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Menos de 3" />
+
+            <RadioButton
+                android:id="@+id/rbtresocuatro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 o 4 "
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rbmascuatro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mas de 4" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="413dp"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Adiccionales"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="253dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="206dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="408dp"
+            android:layout_height="36dp"
+            android:text="400.000"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="208dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="522dp"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btncalcular"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnlimpiar"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="57dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="463dp"
+        tools:ignore="MissingConstraints"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="0"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
